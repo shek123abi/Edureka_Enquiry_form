@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-header bg-primary col-12" id="font">
+              Edureka Form
+              <img src="download.jpg" class="rounded float-right" alt="edureka" height="100px">
+            </div>
+
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12">
+                  <form
+                    id="form"
+                    action="#"
+                    class="needs-validation"
+                    novalidate
+                  >
+                    <div class="form-group abi">
+                      <label for="name" class="form-label names">Name</label>
+                      <input
+                        type="text"
+                        class="form-control name"
+                        id="names"
+                        placeholder="Enter your  full name" onchange="abishek()"
+                        required
+                      />
+                      <div class="invalid-feedback">Enter the Name</div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                      />
+                      <div class="invalid-feedback">Enter the valid  Email</div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="Address" class="form-label">Address</label>
+                      <input
+                        type="text"
+                        class="form-control Address"
+                        id="Address"
+                        placeholder="Enter your address"
+                        required
+                      />
+                      <div class="invalid-feedback">enter the address</div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="City">City</label>
+
+                      <select class="form-select form-control mb-2" required>
+                        <option selected disabled value>
+                          Select your city
+                        </option>
+
+                        <option value="Chennnai">Chennai</option>
+                        <option value="Salem">Salem</option>
+                        <option value="Trichy">Trichy</option>
+                        <option value="Madurai">Chennai</option>
+                        <option value="Thanjavur">Thanjavur</option>
+                      </select>
+                      <div class="invalid-feedback">enter valid city</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="Date of Birth">Date of birth</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="Date of Birth"
+                        required
+                      />
+                      <div class="invalid-feedback">Enter date of birth</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="Number" class="form-label">Number</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="Number"
+                        placeholder="enter your number"
+                        required
+                      />
+                      <div class="invalid-feedback">Enter Number</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="Pincode" class="form-label">Pincode</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="Pincode"
+                        placeholder="Enter your pincode"
+                        required
+                      />
+                      <div class="invalid-feedback">Enter Pincode</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="State">State</label>
+                      <select
+                        class="form-select form-control mb-2"
+                        id="state"
+                        required
+                      >
+                        <option selected disabled value>
+                          Select your State
+                        </option>
+
+                        <option>Tamil nadu</option>
+                        <option>Karnataka</option>
+                        <option>Telgana</option>
+                        <option>Maharastra</option>
+                        <option>Punjab</option>
+                        <option>Rajasthan</option>
+                        <option>Odisha</option>
+                        <option>West Bengal</option>
+                        <option>Chattisgarh</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                
+                    
+                      
+                    
+                        <h6>Qualification:</h6>
+                        <label for="profession">Profession:</label>
+                        <div class="form-group" required>
+                          <select
+                            class="form-select form-control"
+                            id="person"
+                            required
+                          >
+                            <option selected disabled value="">
+                              --Profession--
+                            </option>
+                            <option id="Student" class="Student">
+                              Student
+                            </option>
+                            <option id="Employee" class="Employee">
+                              Employee
+                            </option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Please select a valid state.
+                          </div>
+                        </div>
+
+                        <div class="form-group" id="temp" required>
+                          <h6>Student Details</h6>
+                          <label for="name">Name of the College</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            placeholder="enter your college"
+                            required
+                          />
+                          <div class="invalid-feedback">Enter College</div>
+                          <label for="date">Year of Study</label>
+                          <input
+                            type="date"
+                            class="form-control"
+                            name="date"
+                            id="date"
+                            required
+                          />
+                          <div class="invalid-feedback">
+                            Enter Year of Study
+                          </div>
+                        </div>
+
+                        <div class="form-group" id="temps" required>
+                          <h6>Employess Details</h6>
+                          <label for="name">Name of Oragnization</label>
+                          <input type="text" class="form-control" required />
+                          <div class="invalid-feedback">
+                            Enter name of organization
+                          </div>
+
+                          <label for="name" class="employee_hidden"
+                            >Year of Experience</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control employee_hidden"
+                            required
+                          />
+                          <div class="invalid-feedback">
+                            Enter year of experience
+                          </div>
+                        </div>
+
+                        <h6>How did you get to know about Edureka</h6>
+                        <div class="form-check form-check-inline">
+                          <input
+                            type="radio"
+                            id="friend"
+                            name="friend"
+                            class="form-check-input"
+                          />From Friend
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            type="radio"
+                            id="paper"
+                            name="friend"
+                            class="form-check-input"
+                          />Paper Ads
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            type="radio"
+                            id="tv"
+                            name="friend"
+                            class="form-check-input"
+                          />TV Ads
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            type="radio"
+                            id="Social"
+                            name="friend"
+                            class="form-check-input"
+                          />Social Media
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            type="radio"
+                            id="Hoardings"
+                            name="friend"
+                            class="form-check-input"
+                          />Hardings
+                        </div>
+                      </div>
+                      </div>
+                      
+                      <div class="col text-center">
+                        <button type="submit" class="btn btn-primary btn-block mt-4" onclick="edureka()">
+                          Submit
+                        </button>
+                      </div>
+                      </div>
+                </div>
+                </div>
+            </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  <script>
+    // (function () {
+    //   "use strict";
+    //   window.addEventListener(
+    //     "load",
+    //     function () {
+    //       // Code
+    //       let forms = document.getElementsByClassName("needs-validation");
+    //       var validation = Array.prototype.filter.call(forms, function (form) {
+    //         form.addEventListener(
+    //           "submit",
+    //           function (event) {
+    //             if (form.checkValidity() === false) {
+    //               event.preventDefault();
+    //               event.stopPropagation();
+    //             } else if (form.checkValidity() === true) {
+    //               alert("The form was submitted");
+    //             }
+    //             form.classList.add("was-validated");
+    //           },
+    //           false
+    //         );
+    //       });
+    //     },
+    //     false
+    //   );
+    // })();
+  </script>
+
+  <script src="script.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"
+  ></script>
+  
+  </body>
+</html>
