@@ -14,6 +14,7 @@ function edureka(){
     localStorage.setItem("number",Number)
     localStorage.setItem("pincode",Pincode)
     console.log(Name,Email,Address,Number,Pincode);
+    window.location.href="./index2.html"
     
      
 };
