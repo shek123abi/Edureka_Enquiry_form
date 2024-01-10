@@ -8,7 +8,11 @@ function edureka(){
     let employee=document.getElementById("Employee").value;
     let student_hidden=document.getElementById("student-hidden");
     let employee_hidden=document.getElementById("employee-hidden");
-
+    localStorage.setItem("firstname",Name)
+    localStorage.setItem("email",Email)
+    localStorage.setItem("address",Address)
+    localStorage.setItem("number",Number)
+    localStorage.setItem("pincode",Pincode)
     console.log(Name,Email,Address,Number,Pincode);
     
      
