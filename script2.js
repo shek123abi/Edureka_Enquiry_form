@@ -1,0 +1,10 @@
+document.getElementById("1").innerText=localStorage.getItem("firstname")
+document.getElementById("2").innerText=localStorage.getItem("email")
+document.getElementById("3").innerText=localStorage.getItem("address")
+document.getElementById("4").innerText=localStorage.getItem("number")
+document.getElementById("5").innerText=localStorage.getItem("pincode")
+console.log(firstname);
+console.log(email);
+console.log(address);
+console.log(number);
+console.log(pincode);
